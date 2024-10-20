@@ -1,0 +1,45 @@
+/* style.css */
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #222;
+    overflow: hidden;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#gameContainer {
+    position: relative;
+    width: 600px;
+    height: 800px;
+    background-color: #333;
+    overflow: hidden;
+    border: 2px solid #fff;
+}
+
+#dinosaur {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: auto;
+    transition: left 0.1s;
+}
+
+.meteor {
+    position: absolute;
+    top: 0;
+    width: 50px;
+    height: auto;
+    animation: fall 4s linear infinite;
+}
+
+@keyframes fall {
+    to {
+        top: 100%;
+    }
+}
